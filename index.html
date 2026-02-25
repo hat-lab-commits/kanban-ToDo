@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban ToDo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Kanban ToDo</h1>
+
+  <div class="column">
+    <h2>未着手</h2>
+    <div id="todoList" class="task-list"></div>
+  </div>
+
+  <div class="column">
+    <h2>進行中</h2>
+    <div id="doingList" class="task-list"></div>
+  </div>
+
+  <div class="column">
+    <h2>完了</h2>
+    <div id="doneList" class="task-list"></div>
+  </div>
+
+  <div class="task-input">
+    <input type="text" id="taskTitle" placeholder="やることを書く">
+
+    <select id="taskPriority">
+       <option value="low">低</option>
+       <option value="medium">中</option>
+       <option value="high">高</option>
+    </select>
+    <button id="addTaskBtn">追加</button>
+  </div>
+
+ 
+  
+  <script src="app.js"></script>
+</body>
+</html>
